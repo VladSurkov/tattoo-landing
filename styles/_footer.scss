@@ -1,0 +1,227 @@
+.footer {
+    background: #050402;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.footer__content {
+    padding: 135px 0 120px 0px;
+    display: flex;
+    align-items: center;
+}
+.footer__content__first-part {
+    width: 615px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Logo block
+.footer__logo-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+}
+.footer__logo-block__link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FAF6F2;
+}
+.footer__logo-block__link:hover {
+    color: #BB8C5F;
+}
+
+// Links block
+.footer__links-blocks {
+    display: flex;
+    gap: 40px;
+}
+.footer__links-first-block, .footer__links-second-block {
+    width: 126px;
+    height: 141px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    a {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 133.5%;
+        color: #E9ECF1;
+    }
+    a:hover {
+        color: #BB8C5F;
+    }
+}
+
+// Footer line
+.footer__line {
+    height: 100%;
+    position: absolute;
+    right: clamp(23.563rem, 3.979rem + 40.8vw, 52.938rem);
+    top: 0;
+}
+
+// Second part
+.footer__content__second-part {
+    width: 370px;
+    position: absolute;
+    right: clamp(0.938rem, -14.896rem + 32.99vw, 24.688rem);
+}
+.footer__number-block {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FAF6F2;
+}
+.footer__number-block:hover {
+    color: #BB8C5F;
+}
+.footer__contacts__icons {
+    width: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        cursor: pointer;
+    }
+}
+.footer__contacts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.footer__working-hours {
+    margin-top: 12px;
+    p {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 150%;
+        color: #636B78;
+    }
+}
+
+.footer__email-block {
+    margin-top: 32px;
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FAF6F2;
+}
+.footer__email-block:hover {
+    color: #BB8C5F;
+}
+
+@media (max-width: 1150px) {
+    .footer__content {
+        justify-content: space-between;
+    }
+    .footer__content__second-part {
+        position: static;
+    }
+    .footer__line {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .footer__content {
+        flex-wrap: wrap;
+        padding: 70px 0 40px 0px;
+        gap: 20px;
+    }  
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 561px;
+    }
+    .footer__content {
+        display: block;
+        padding: 70px 0 70px 0px;
+    }
+    .footer__line {
+        display: none;
+    }
+    .footer__content__second-part {
+        margin-top: 75px;
+        position: static;
+        width: 390px;
+    }
+    .footer__links-blocks {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer__content__first-part {
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 490px) {
+    .footer__content__first-part {
+        align-items: stretch;
+    }
+    .footer__links-blocks {
+        flex-direction: column;
+    }
+    .footer__content__second-part {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        height: 701px;
+    }
+    .footer__content {
+        padding: 56px 0 60px 0px;
+    }
+    .footer__content__first-part {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .footer__content__second-part {
+        margin-top: 75px;
+    }
+    .footer__logo-block {
+        align-items: center;
+        height: auto;
+        gap: 10px;
+    }
+    .footer__links-blocks {
+        flex-direction: row;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__contacts {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .footer__working-hours {
+        margin-top: 20px;
+    }
+}

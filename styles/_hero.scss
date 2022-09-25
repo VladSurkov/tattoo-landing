@@ -1,0 +1,151 @@
+.hero {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: url('../../images/Hero/background_hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: hidden;
+}
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__info {
+    width: 600px;
+    padding-top: 110px;
+}
+.hero__title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 100%;
+    color: #BB8C5F;
+}
+.hero__text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    color: #FAF6F2;
+    margin: 30px 0 60px 0;
+}
+.hero__button {
+    width: 275px;
+    height: 70px;
+    background: url('../../images/Hero/button.svg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border: 0;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FAF6F2;
+}
+
+
+.hero__pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 138px;
+}
+.hero__pages__icons {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    img {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+}
+.hero__pages__arrowUp {
+    width: 40px;
+    height: 58px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.hero__pages__arrowDown {
+    width: 40px;
+    height: 86px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 536px;
+    }
+    .hero__info {
+        width: 476px;
+        padding-top: 48px;
+    }
+    .hero__content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hero__pages {
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .hero__pages__icons {
+        flex-direction: row;
+    }
+    .hero__pages__arrowUp, .hero__pages__arrowDown {
+        display: none;
+    }
+    .hero__title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero__content {
+        align-self: flex-end;
+    }
+    .hero__title {
+        font-size: 40px;
+    }
+    .hero__text {
+        font-size: 22px;
+        margin: 30px 0 40px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero {
+        height: 635px;
+    }
+    .hero__info {
+        padding: 0 20px 20px 20px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .hero__text {
+        margin: 20px 0 40px 0;
+    }
+    .hero__pages {
+        display: none;
+    }
+}
+
+@media (max-width: 340px) {
+    // .hero__info {
+    //     width: 280px;
+    // }
+    .hero__title {
+        font-size: 35px;
+    }
+    .hero__text {
+        font-size: 20px;
+    }
+}

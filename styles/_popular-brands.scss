@@ -1,0 +1,272 @@
+.popular-brands {
+    background-color: #EEE;
+    padding-top: 115px;
+    position: relative;
+    overflow: hidden;
+}
+
+// content 
+.popular-brands__title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: #3E424B;
+}
+
+// see all button
+.popular-brands__see-all-btn {
+    display: block;
+    text-align: end;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%; 
+    color: #3E424B;
+}
+.popular-brands__see-all-btn:hover {
+    text-decoration: underline;
+}
+
+// popular brands grid
+.popular-brands__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.popular-brands__item {
+    width: 211px;
+    height: 82px;
+    background-color: white;
+    cursor: pointer;
+}
+.bottom {
+    margin-top: 40px;
+}
+.popular-brands__horizontal-line {
+    position: absolute;
+    top: 98px;
+    width: 100%;
+}
+.popular-brands__vertical-first-line, 
+.popular-brands__vertical-second-line, 
+.popular-brands__vertical-third-line,
+.popular-brands__vertical-fourth-line {
+    position: absolute;
+    height: 100%;
+}
+.popular-brands__vertical-first-line {
+    left: 229px;
+}
+.popular-brands__vertical-second-line {
+    left: 479px;
+}
+.popular-brands__vertical-third-line {
+    right: 482px;
+}
+.popular-brands__vertical-fourth-line {
+    right: 231px;
+}
+.first-item {
+    background: url('../../images/Popular brands/first.png');
+    background-size: cover;
+    background-position: center;
+}
+.second-item {
+    background: url('../../images/Popular brands/second.png');
+    background-size: cover;
+    background-position: center;
+}
+.third-item {
+    background: url('../../images/Popular brands/third.png');
+    background-size: cover;
+    background-position: center;
+}
+.fourth-item {
+    background: url('../../images/Popular brands/fourth.png');
+    background-size: cover;
+    background-position: center;
+}
+.fifth-item {
+    background: url('../../images/Popular brands/fifth.png');
+    background-size: cover;
+    background-position: center;
+}
+.sixth-item {
+    background: url('../../images/Popular brands/sixth.png');
+    background-size: cover;
+    background-position: center;
+}
+.seventh-item {
+    background: url('../../images/Popular brands/seventh.png');
+    background-size: cover;
+    background-position: center;
+}
+.eighth-item {
+    background: url('../../images/Popular brands/eighth.png');
+    background-size: cover;
+    background-position: center;
+}
+.ninth-item {
+    background: url('../../images/Popular brands/ninth.png');
+    background-size: cover;
+    background-position: center;
+}
+.tenth-item {
+    background: url('../../images/Popular brands/tenth.png');
+    background-size: cover;
+    background-position: center;
+}
+
+// arrows
+.popular-brands__left-arrow, 
+.popular-brands__right-arrow {
+    cursor: pointer;
+}
+.popular-brands__left-arrow {
+    position: absolute;
+    top: 282px;
+    left: clamp(1.25rem, -46rem + 52.5vw, 17rem);
+    z-index: 3;
+}
+.popular-brands__right-arrow {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 282px;
+    right: clamp(1.25rem, -46rem + 52.5vw, 17rem);
+    z-index: 3;
+}
+
+@media (max-width: 1385px) {
+    .popular-brands__left-arrow, .popular-brands__right-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 1270px) { 
+    .popular-brands__horizontal-line, 
+    .popular-brands__vertical-first-line, 
+    .popular-brands__vertical-second-line, 
+    .popular-brands__vertical-third-line, 
+    .popular-brands__vertical-fourth-line {
+        display: none;
+    }
+    .bottom {
+        margin-top: clamp(1.25rem, -0.662rem + 3.98vw, 2.5rem);
+    }
+}
+
+@media (max-width: 1140px) {
+    .popular-brands__item {
+        width: clamp(8.75rem, -0.411rem + 19.09vw, 13.188rem); // clamp(8.125rem, -3.586rem + 24.4vw, 13.188rem)
+    }
+}
+
+@media (max-width: 768px) { 
+    .popular-brands {
+        padding-top: 0px;
+    }
+    .popular-brands__title {
+        font-size: 50px;
+    } 
+    .seventh-item, .eighth-item, 
+    .ninth-item, .tenth-item {
+        display: none;
+    }
+    .popular-brands__title-text {
+        display: flex;
+        justify-content: space-between;
+    }
+    .popular-brands__see-all-btn {
+        margin-top: 15px;
+    }
+    .popular-brands__grid {
+        margin-top: 38px;
+    }
+    .fourth-item, .fifth-item, .sixth-item {
+        margin-top: 40px;
+    }
+    .popular-brands__item {
+        width: clamp(7.5rem, 0.453rem + 26.53vw, 13.188rem);
+    }
+}
+
+@media (max-width: 610px) {
+    .popular-brands__title-text {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 520px) {
+    .fourth-item, .fifth-item, .sixth-item {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .popular-brands__horizontal-line, 
+    .popular-brands__vertical-first-line, 
+    .popular-brands__vertical-second-line {
+        display: block;
+    }
+    .popular-brands__title-text {
+        flex-direction: row;
+    }
+    .popular-brands {
+        padding-top: 60px;
+    }
+    .popular-brands__title {
+        font-size: 25px;
+        white-space: nowrap;
+    }
+    .popular-brands__see-all-btn {
+        margin-top: 7px;
+        font-size: 15px;
+        // align-self: flex-end;
+    }
+    .popular-brands__grid {
+        margin-top: 30px;
+    }
+    .popular-brands__item {
+        width: clamp(5.188rem, -0.527rem + 28.57vw, 7.063rem);
+        height: 62px;
+    }
+    .fourth-item, .fifth-item, .sixth-item {
+        margin-top: 20px;
+    }
+    .popular-brands__vertical-first-line {
+        left: clamp(5.625rem, -0.661rem + 31.43vw, 7.688rem);
+    }
+    .popular-brands__vertical-second-line {
+        left: clamp(11.688rem, -2.027rem + 68.57vw, 16.188rem);
+    }
+    .popular-brands__horizontal-line {
+        top: 70px;
+        height: 3px;
+    }
+}
+
+@media (max-width: 345px) {
+    .popular-brands__title-text {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    .popular-brands__item {
+        width: 83px;
+        height: 32px;
+    }
+    .fourth-item, .fifth-item, .sixth-item {
+        margin-top: 15px;
+    }
+    .popular-brands__vertical-first-line {
+        left: 90px;
+    }
+    .popular-brands__vertical-second-line {
+        left: 188px;
+    }
+    .popular-brands__horizontal-line {
+        top: 39px;
+    }
+}
